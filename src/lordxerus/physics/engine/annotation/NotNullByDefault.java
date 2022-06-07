@@ -1,4 +1,4 @@
-package lordxerus.aabbtest.engine.annotation;
+package lordxerus.physics.engine.annotation;
 
 import javax.annotation.Nonnull;
 import javax.annotation.meta.TypeQualifierDefault;
