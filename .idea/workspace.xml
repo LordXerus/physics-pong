@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35b9f240-4134-4742-9a1c-cb562b0389c3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/dyn4j-4.2.1-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lordxerus/physics/main/Camera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lordxerus/physics/main/CollisionFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lordxerus/physics/main/Component.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lordxerus/physics/main/GameObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lordxerus/physics/main/Renderable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lordxerus/physics/main/Scale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lordxerus/physics/main/Scene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/dyn4j_4_2_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/dyn4j_4_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lordxerus/physics/main/RenderSurface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Physics.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Physics.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lordxerus/physics/engine/annotation/NotNullByDefault.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/physics/engine/annotation/NotNullByDefault.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lordxerus/physics/main/PongGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/physics/main/PongGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lordxerus/physics/main/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/physics/main/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lordxerus/physics/main/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/physics/main/Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lordxerus/physics/main/GameApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/physics/main/GameApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lordxerus/physics/main/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/physics/main/GameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lordxerus/physics/main/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/physics/main/Scene.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +63,26 @@
       <recent name="lordxerus.physics.main" />
       <recent name="lordxerus.physics.engine.annotation" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="GameApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lordxerus.physics.main.GameApp" />
+      <module name="Physics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lordxerus.physics.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GameApp" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
