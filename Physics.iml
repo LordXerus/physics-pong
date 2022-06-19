@@ -10,5 +10,6 @@
     <orderEntry type="library" name="core" level="project" />
     <orderEntry type="library" name="jsr305-3.0.2" level="project" />
     <orderEntry type="library" name="dyn4j-4.2.1" level="project" />
+    <orderEntry type="library" name="jogl-all" level="project" />
   </component>
 </module>
