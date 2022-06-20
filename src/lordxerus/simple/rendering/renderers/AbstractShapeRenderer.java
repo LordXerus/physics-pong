@@ -5,7 +5,7 @@ import lordxerus.simple.rendering.ScaleInfo;
 import processing.core.PGraphics;
 
 @NotNullByDefault
-public abstract class AbstractShapeRenderer extends AbstractRenderer {
+abstract class AbstractShapeRenderer extends AbstractRenderer {
 
 
     //<editor-fold desc="Stroke Settings">
@@ -47,17 +47,17 @@ public abstract class AbstractShapeRenderer extends AbstractRenderer {
     private int fill = 0xffffffff;
     private boolean useFill = true;
 
-    public final int getFill() {
+    public int getFill() {
         return fill;
     }
-    public final boolean isUsingFill() {
+    public boolean isUsingFill() {
         return useFill;
     }
-    public final void setFill(int color) {
+    public void setFill(int color) {
         this.useFill = true;
         this.fill = color;
     }
-    public final void noFill() {
+    public void noFill() {
         useFill = false;
     }
     //</editor-fold>

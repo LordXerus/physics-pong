@@ -9,7 +9,7 @@ import processing.core.PGraphics;
 public class Camera {
 
     // how much t
-    public static final float UNITS_WIDTH = 20.0f;
+    private static final float UNITS_HEIGHT = 20.0f;
 
     private final PGraphics graphics;
     public PGraphics getGraphics() {
@@ -76,11 +76,23 @@ public class Camera {
     public void setMaskNotAnd(int mask) { this.mask &= ~mask; }
     //</editor-fold>
 
+    public final float getUnitsHeight() {
+        return UNITS_HEIGHT;
+    }
+    private final float aspectRatio; // see constructor
+    public final float getAspectRatio() {
+        return aspectRatio;
+    }
+    private final float unitsWidth;
+    public final float getUnitsWidth() {
+        return unitsWidth;
+    }
     private void initialize() {
         graphics.beginDraw();
 
 
-        graphics.rectMode(PConstants.RADIUS);
+        graphics.rectMode(PConstants.CENTER);
+        graphics.ellipseMode(PConstants.RADIUS);
         graphics.strokeWeight(pixels(1f));
         graphics.endDraw();
     }
@@ -89,8 +101,11 @@ public class Camera {
         graphics = applet.createGraphics(width, height, applet.sketchRenderer());
         renderWorld = world;
 
-        viewScale = graphics.width / UNITS_WIDTH / 2;
+        viewScale = graphics.height / UNITS_HEIGHT / 2;
         scaleInfo = new Info();
+
+        aspectRatio = (float)width / height;
+        unitsWidth = UNITS_HEIGHT * aspectRatio;
 
         initialize();
     }
@@ -105,8 +120,11 @@ public class Camera {
         this.setBG_color(camera.bg_color);
         this.setMask(camera.mask);
 
-        viewScale = graphics.width / UNITS_WIDTH / 2;
+        viewScale = graphics.width / UNITS_HEIGHT / 2;
         scaleInfo = new Info();
+
+        aspectRatio = camera.aspectRatio;
+        unitsWidth = camera.unitsWidth;
         initialize();
     }
 
@@ -128,7 +146,7 @@ public class Camera {
         graphics.fill(0xffffffff);
 
         graphics.translate(graphics.width / 2f, graphics.height / 2f);
-        graphics.scale(viewScale);
+        graphics.scale(viewScale, -viewScale);
 
         graphics.rotate(-rotationOffset);
         graphics.translate((float) -positionOffset.x, (float) -positionOffset.y);

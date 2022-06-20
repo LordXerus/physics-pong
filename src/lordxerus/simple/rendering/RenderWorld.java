@@ -9,27 +9,29 @@ import java.util.stream.Stream;
 @NotNullByDefault
 public class RenderWorld <T extends Renderable> {
 
-    private class Holder {
-        public int priority;
-        public T renderer;
-
-        public Holder(T renderer, int priority) {
-            this.renderer = renderer;
-            this.priority = priority;
-        }
-    }
-
-    private final Set<Holder> renderers = new TreeSet<>(Comparator.comparingInt(holder -> holder.priority));
-
+    private final Map<Integer, Set<T>> renderers = new HashMap<>();
+    private final TreeSet<Integer> priorities = new TreeSet<>();
     public Stream<T> getRenderers() {
-        return renderers.stream().map(holder -> holder.renderer);
+        return priorities.stream()
+                .map(renderers::get)
+                .flatMap(Set::stream);
+
     }
 
     public void addRenderer(T renderer, int priority) {
-        renderers.add(new Holder(renderer, priority));
+        Set<T> bucket = renderers.computeIfAbsent(priority, k -> {
+            priorities.add(priority);
+            return new HashSet<>();
+        });
+
+        if(!bucket.add(renderer)) throw new IllegalArgumentException("Renderer already in world.");
+        bucket.add(renderer);
 
     }
     public void removeRenderer(T renderer) {
-        renderers.removeIf(holder -> holder.renderer == renderer);
+        for(Set<T> bucket : renderers.values()) {
+            if(bucket.remove(renderer)) return;
+        }
+        throw new IllegalArgumentException("Renderer not in world");
     }
 }
