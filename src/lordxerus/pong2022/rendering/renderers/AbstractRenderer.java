@@ -1,8 +1,7 @@
-package lordxerus.simple.rendering.renderers;
+package lordxerus.pong2022.rendering.renderers;
 
-import lordxerus.simple.annotation.NotNullByDefault;
-import lordxerus.simple.rendering.ScaleInfo;
-import lordxerus.simple.rendering.renderers.Renderable;
+import lordxerus.pong2022.annotation.NotNullByDefault;
+import lordxerus.pong2022.rendering.ScaleInfo;
 import org.dyn4j.geometry.Transform;
 import org.dyn4j.geometry.Vector2;
 import processing.core.PGraphics;

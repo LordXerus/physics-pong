@@ -1,4 +1,4 @@
-package lordxerus.simple.annotation;
+package lordxerus.pong2022.annotation;
 
 import javax.annotation.Nonnull;
 import javax.annotation.meta.TypeQualifierDefault;

@@ -1,19 +1,26 @@
-package lordxerus.simple.scenes;
+package lordxerus.pong2022.scenes;
 
-import lordxerus.simple.input.KeyboardInput;
-import lordxerus.simple.rendering.Camera;
+import ddf.minim.Minim;
+import lordxerus.pong2022.input.KeyboardInput;
+import lordxerus.pong2022.rendering.Camera;
 import processing.core.PApplet;
 
 public abstract class AbstractScene {
     public static final KeyboardInput Keyboard = new KeyboardInput();
     public static final SceneManager Scenes = new SceneManager();
 
+    public final Minim Audio;
+
     private int lastMillis = 0;
 
     private final PApplet applet;
 
     public AbstractScene(PApplet applet) {
+
         this.applet = applet;
+        Audio = new Minim(applet);
+
+
     }
 
 
@@ -35,11 +42,11 @@ public abstract class AbstractScene {
 
     public final void doTick() {
         int m = applet.millis();
-        update((m - lastMillis) / 1000f);
+        update((m - lastMillis) / 1000.);
 
         lastMillis = m;
     }
-    protected abstract void update(float dt);
+    protected abstract void update(double dt);
 
 
 

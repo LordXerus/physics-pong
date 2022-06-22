@@ -1,17 +1,17 @@
-package lordxerus.simple;
+package lordxerus.pong2022;
 
-import lordxerus.simple.rendering.*;
-import lordxerus.simple.rendering.renderers.AbstractRenderer;
-import lordxerus.simple.rendering.renderers.CircleRenderer;
-import lordxerus.simple.rendering.renderers.RectRenderer;
-import lordxerus.simple.scenes.AbstractScene;
-import lordxerus.simple.scenes.PongScene;
+import lordxerus.pong2022.rendering.*;
+import lordxerus.pong2022.rendering.renderers.AbstractRenderer;
+import lordxerus.pong2022.rendering.renderers.CircleRenderer;
+import lordxerus.pong2022.rendering.renderers.RectRenderer;
+import lordxerus.pong2022.scenes.AbstractScene;
+import lordxerus.pong2022.scenes.pongScene.PongScene;
+import org.dyn4j.dynamics.Settings;
 import processing.core.PApplet;
 
 public class GameApp extends PApplet{
-
 	public void settings(){
-		size(800, 500);
+		size(1000, 700);
 	}
 	Camera camera;
 	RenderWorld<AbstractRenderer> renderWorld = new RenderWorld<>();
@@ -27,7 +27,9 @@ public class GameApp extends PApplet{
 		renderWorld.addRenderer(box, 0);
 
 		AbstractScene.Scenes.pushScene(new PongScene(this));
-		frameRate(144);
+		frameRate(60);
+
+		System.out.println(this.dataPath("wall.mp3"));
 	}
 
 	public void draw(){
@@ -38,10 +40,12 @@ public class GameApp extends PApplet{
 		//circle.setActivated(!circle.getActivated());
 		camera.draw();
 		image(camera.getGraphics(), 0, 0);
-		System.out.println(frameRate);
+		//System.out.println(frameRate);
 
 		for(AbstractScene scene : AbstractScene.Scenes.getScenes()) {
 			scene.doTick();
+			textSize(20);
+			//System.out.println(dataPath("wall.mp3"));
 		}
 
 	}

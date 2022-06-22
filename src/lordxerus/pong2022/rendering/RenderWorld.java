@@ -1,7 +1,7 @@
-package lordxerus.simple.rendering;
+package lordxerus.pong2022.rendering;
 
-import lordxerus.simple.annotation.NotNullByDefault;
-import lordxerus.simple.rendering.renderers.Renderable;
+import lordxerus.pong2022.annotation.NotNullByDefault;
+import lordxerus.pong2022.rendering.renderers.Renderable;
 
 import java.util.*;
 import java.util.stream.Stream;

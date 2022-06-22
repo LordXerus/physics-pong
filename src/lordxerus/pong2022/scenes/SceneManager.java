@@ -1,4 +1,4 @@
-package lordxerus.simple.scenes;
+package lordxerus.pong2022.scenes;
 
 import java.util.*;
 

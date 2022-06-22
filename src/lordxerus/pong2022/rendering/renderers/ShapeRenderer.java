@@ -1,8 +1,8 @@
-package lordxerus.simple.rendering.renderers;
+package lordxerus.pong2022.rendering.renderers;
 
 
-import lordxerus.simple.annotation.NotNullByDefault;
-import lordxerus.simple.rendering.ScaleInfo;
+import lordxerus.pong2022.annotation.NotNullByDefault;
+import lordxerus.pong2022.rendering.ScaleInfo;
 import processing.core.PGraphics;
 import processing.core.PShape;
 
