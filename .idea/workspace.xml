@@ -2,42 +2,69 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
+      <artifact name="Physics8:jar" />
       <artifact name="Physics:jar" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35b9f240-4134-4742-9a1c-cb562b0389c3" name="Changes" comment="Created a basic demo involving ball in a box&#10;&#10;Got tired brain to work.&#10;Came up with something that works.&#10;Wow it's a haiku.&#10;&#10;The red ball is bouncing in a white box. The foundations I laid earlier means now the demo is actually running a physics engine. I can also shake the screen. Problem is that this scene took me 200 lines of code to configure. Going to need to extract that into classes somehow.">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Physics_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/physics/main/Camera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/physics/main/Component.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/physics/main/GameObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/physics/main/Scene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lordxerus/simple/input/Key.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lordxerus/simple/input/KeyboardInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lordxerus/simple/rendering/renderers/ShapeRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lordxerus/simple/scenes/AbstractScene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lordxerus/simple/scenes/PongScene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lordxerus/simple/scenes/SceneManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Physics8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/minim.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sound.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/data/wall.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/data/welcometoosu.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dyn4j/dyn4j-4.2.1-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dyn4j/dyn4j-4.2.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dyn4j/dyn4j-4.2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/minim/jl1.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/minim/jsminim.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/minim/minim.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/minim/mp3spi1.9.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/minim/tritonus_aos.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/minim/tritonus_share.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/processing.sound/javamp3-1.0.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/processing.sound/jsyn-20171016.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/processing.sound/sound.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/processing/core.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/processing/core3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/processing/gluegen-rt.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/processing/jogl-all.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lordxerus/pong2022/scenes/pongScene/PongBall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lordxerus/pong2022/scenes/pongScene/PongPaddle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lordxerus/pong2022/scenes/pongScene/PongPaddleAnchor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lordxerus/pong2022/scenes/pongScene/PongTagged.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lordxerus/pong2022/scenes/pongScene/PongWall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Physics_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Physics_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/core.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/dyn4j_4_2_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/dyn4j_4_2_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jogl_all.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Physics.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Physics.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lordxerus/physics/main/Camera.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lordxerus/physics/main/Component.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lordxerus/physics/main/GameObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lordxerus/physics/main/Scale.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lordxerus/physics/main/Scene.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lordxerus/simple/GameApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/simple/GameApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lordxerus/simple/rendering/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/simple/rendering/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lordxerus/simple/rendering/RenderWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/simple/rendering/RenderWorld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lordxerus/simple/rendering/renderers/AbstractShapeRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/simple/rendering/renderers/AbstractShapeRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lordxerus/simple/rendering/renderers/RectRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/simple/rendering/renderers/RectRenderer.java" afterDir="false" />
-    </list>
-    <list id="7b10118f-5b2d-41a7-b604-ecc67c6a4e77" name="Moved files to out of src" comment="">
-      <change beforePath="$PROJECT_DIR$/src/lordxerus/physics/main/CollisionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/physics/main/CollisionFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lordxerus/physics/main/GameApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/physics/main/GameApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lordxerus/physics/main/PongGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/physics/main/PongGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lordxerus/physics/main/Renderable.java" beforeDir="false" afterPath="$PROJECT_DIR$/physics/main/Renderable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/dyn4j-4.2.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/dyn4j-4.2.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/dyn4j-4.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/gluegen-rt.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jogl-all.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lordxerus/simple/GameApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/pong2022/GameApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lordxerus/simple/annotation/NotNullByDefault.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/pong2022/annotation/NotNullByDefault.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lordxerus/simple/input/Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/pong2022/input/Key.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lordxerus/simple/input/KeyboardInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/pong2022/input/KeyboardInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lordxerus/simple/rendering/BuggedCamera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/pong2022/rendering/BuggedCamera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lordxerus/simple/rendering/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/pong2022/rendering/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lordxerus/simple/rendering/RenderWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/pong2022/rendering/RenderWorld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lordxerus/simple/rendering/ScaleInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/pong2022/rendering/ScaleInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lordxerus/simple/rendering/renderers/AbstractRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/pong2022/rendering/renderers/AbstractRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lordxerus/simple/rendering/renderers/AbstractShapeRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/pong2022/rendering/renderers/AbstractShapeRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lordxerus/simple/rendering/renderers/CircleRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/pong2022/rendering/renderers/CircleRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lordxerus/simple/rendering/renderers/RectRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/pong2022/rendering/renderers/RectRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lordxerus/simple/rendering/renderers/Renderable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/pong2022/rendering/renderers/Renderable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lordxerus/simple/rendering/renderers/ShapeRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/pong2022/rendering/renderers/ShapeRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lordxerus/simple/scenes/AbstractScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/pong2022/scenes/AbstractScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lordxerus/simple/scenes/PongScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/pong2022/scenes/pongScene/PongScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lordxerus/simple/scenes/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lordxerus/pong2022/scenes/SceneManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +90,9 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="29Fg6yaLyFgqfeGF1Y4p9zCMro0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -71,10 +100,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/underscore/IdeaProjects/physics-pong/lib/gluegen-rt.jar",
+    "last_opened_file_path": "/home/underscore/IdeaProjects/physics-pong/lib/processing.sound/javamp3-1.0.4.jar",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -88,9 +118,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="lordxerus.pong2022.scenes.pongScene" />
       <recent name="lordxerus.physics.main" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/out/artifacts/Physics_jar" />
       <recent name="D:\William\Programming\Java\Eclipse\eclipse-workspace\Physics\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -110,13 +142,14 @@
       <recent name="lordxerus.physics.engine.annotation" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.lordxerus.simple.GameApp">
+  <component name="RunManager">
     <configuration name="GameApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lordxerus.simple.GameApp" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="MAIN_CLASS_NAME" value="lordxerus.pong2022.GameApp" />
       <module name="Physics" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lordxerus.simple.rendering.renderers.AbstractShapeRenderer" />
+          <option name="PATTERN" value="lordxerus.pong2022.rendering.renderers.AbstractShapeRenderer" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,27 +157,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lordxerus.physics.main.GameApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lordxerus.physics.main.GameApp" />
-      <module name="Physics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lordxerus.physics.main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.lordxerus.simple.GameApp" />
-      <item itemvalue="Application.lordxerus.physics.main.GameApp" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.lordxerus.simple.GameApp" />
-        <item itemvalue="Application.lordxerus.physics.main.GameApp" />
+        <item itemvalue="Application.GameApp" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +170,6 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="35b9f240-4134-4742-9a1c-cb562b0389c3" name="Changes" comment="" />
-      <changelist id="7b10118f-5b2d-41a7-b604-ecc67c6a4e77" name="Moved files to out of src" comment="" />
       <created>1652714083346</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -168,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655669323645</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created a basic demo involving ball in a box&#10;&#10;Got tired brain to work.&#10;Came up with something that works.&#10;Wow it's a haiku.&#10;&#10;The red ball is bouncing in a white box. The foundations I laid earlier means now the demo is actually running a physics engine. I can also shake the screen. Problem is that this scene took me 200 lines of code to configure. Going to need to extract that into classes somehow.">
+      <created>1655738484829</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655738484829</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,8 +204,25 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Completed Camera-Rendering Foundation&#10;&#10;Whew this looks like a good place to commit.&#10;Got the rendering camera kind of setup.&#10;Next is the scene switching system.&#10;Hopefully it wouldn't be too difficult XD.&#10;I have less than an afternoon... LOL" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed Camera-Rendering Foundation&#10;&#10;Whew this looks like a good place to commit.&#10;Got the rendering camera kind of setup.&#10;Next is the scene switching system.&#10;Hopefully it wouldn't be too difficult XD.&#10;I have less than an afternoon... LOL" />
+    <MESSAGE value="Created a basic demo involving ball in a box&#10;&#10;Got tired brain to work.&#10;Came up with something that works.&#10;Wow it's a haiku.&#10;&#10;The red ball is bouncing in a white box. The foundations I laid earlier means now the demo is actually running a physics engine. I can also shake the screen. Problem is that this scene took me 200 lines of code to configure. Going to need to extract that into classes somehow." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a basic demo involving ball in a box&#10;&#10;Got tired brain to work.&#10;Came up with something that works.&#10;Wow it's a haiku.&#10;&#10;The red ball is bouncing in a white box. The foundations I laid earlier means now the demo is actually running a physics engine. I can also shake the screen. Problem is that this scene took me 200 lines of code to configure. Going to need to extract that into classes somehow." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/lordxerus/pong2022/GameApp.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
