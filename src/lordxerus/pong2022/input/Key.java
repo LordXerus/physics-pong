@@ -1,4 +1,4 @@
-package lordxerus.simple.input;
+package lordxerus.pong2022.input;
 
 import processing.core.PConstants;
 

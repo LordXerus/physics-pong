@@ -1,10 +1,12 @@
-package lordxerus.simple.input;
+package lordxerus.pong2022.input;
 
+import lordxerus.pong2022.annotation.NotNullByDefault;
 import processing.core.PConstants;
 
 import java.util.HashMap;
 import java.util.Map;
 
+@NotNullByDefault
 public class KeyboardInput {
 
     private final Map<Character, Boolean> keyMap = new HashMap<>(200); // 200 keys on keyboard?
@@ -35,8 +37,8 @@ public class KeyboardInput {
         return codedMap.getOrDefault(c, false);
     }
     public boolean getRaw(Key c) {
-        if (c.coded) return codedMap.get(c.value);
-        else return keyMap.get((char) c.value);
+        if (c.coded) return codedMap.getOrDefault(c.value, false);
+        else return keyMap.getOrDefault((char) c.value, false);
     }
 
     private final Map<String, Key> virtualMap = new HashMap<>();
