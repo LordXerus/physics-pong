@@ -76,4 +76,8 @@ public class PongPaddle {
         }
 
     }
+
+    public final void reset() {
+        base.getTransform().setTranslationY(0);
+    }
 }

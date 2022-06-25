@@ -46,12 +46,14 @@ public class PongScene extends AbstractScene {
 //                renderWorld, physicsWorld, 0xffffffff
 //        );
     }
+    PongBall ball1;
+    PongBall ball2;
     private void buildBall() {
         String audioName = "wall.mp3";
         boolean audioExists = applet.dataFile(audioName).isFile();
 
-       PongBall ball1 = new PongBall(0, 0, 0.5f, renderWorld, physicsWorld, 0xffff0000, 10);
-       PongBall ball2 = new PongBall(0, 1, 0.5f, renderWorld, physicsWorld, 0xffff0000, 10);
+       ball1 = new PongBall(0, 0, 0.5f, renderWorld, physicsWorld, 0xffff0000, 10);
+       ball2 = new PongBall(0, 1, 0.5f, renderWorld, physicsWorld, 0xffff0000, 10);
 
         if(audioExists) {
             ball1.setWallSound(Audio.loadSample("wall.mp3"));
@@ -96,6 +98,8 @@ public class PongScene extends AbstractScene {
         Keyboard.setInput("RDown", Key.get(PConstants.DOWN));
         Keyboard.setInput("RUp", Key.get(PConstants.UP));
         Keyboard.setInput("RSpecial", Key.get(PConstants.RIGHT));
+
+        Keyboard.setInput("reset", Key.get(' '));
     }
 
 
@@ -110,6 +114,13 @@ public class PongScene extends AbstractScene {
 
         leftPaddle.handleInput(Keyboard);
         rightPaddle.handleInput(Keyboard);
+
+        if(Keyboard.getInput("reset")) {
+            ball1.reset();
+            ball2.reset();
+            leftPaddle.reset();
+            rightPaddle.reset();
+        }
 
         mainCamera.draw();
         physicsWorld.update(dt);

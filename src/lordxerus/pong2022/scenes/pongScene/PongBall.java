@@ -8,6 +8,7 @@ import org.dyn4j.dynamics.Body;
 import org.dyn4j.dynamics.BodyFixture;
 import org.dyn4j.geometry.Geometry;
 import org.dyn4j.geometry.MassType;
+import org.dyn4j.geometry.Transform;
 import org.dyn4j.world.BroadphaseCollisionData;
 import org.dyn4j.world.ManifoldCollisionData;
 import org.dyn4j.world.NarrowphaseCollisionData;
@@ -29,7 +30,7 @@ class PongBall implements PongTagged {
         isMoving = moving;
         if(moving) {
             
-        // TODO: handle game beginning
+        // TODO: handle game beginning. Scene Switching.
         }
     }
 
@@ -78,6 +79,9 @@ class PongBall implements PongTagged {
         }
     }
 
+    private final Transform initialTransform;
+    private final Transform initialVelocity = new Transform();
+
 
     PongBall(
             float x, float y, float radius,
@@ -107,9 +111,22 @@ class PongBall implements PongTagged {
 
         renderer.setFill(color);
 
+        initialTransform = body.getTransform().copy();
+        initialVelocity.setTranslation(body.getLinearVelocity());
+        initialVelocity.setRotation(body.getAngularVelocity());
+
+
         renderWorld.addRenderer(renderer, -2);
         physicsWorld.addBody(body);
         physicsWorld.addCollisionListener(new BallCollisionListener());
+    }
+
+    public final void reset() {
+        body.setTransform(initialTransform);
+        body.getPreviousTransform().set(initialTransform);
+
+        body.setLinearVelocity(initialVelocity.getTranslation());
+        body.setAngularVelocity(initialVelocity.getRotationAngle());
     }
 
     public String getTag() {
