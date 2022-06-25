@@ -13,7 +13,7 @@ public abstract class AbstractScene {
 
     private int lastMillis = 0;
 
-    private final PApplet applet;
+    protected final PApplet applet;
 
     public AbstractScene(PApplet applet) {
 

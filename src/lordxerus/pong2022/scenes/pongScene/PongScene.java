@@ -47,10 +47,18 @@ public class PongScene extends AbstractScene {
 //        );
     }
     private void buildBall() {
-        PongBall ball1 = new PongBall(0, 0, 0.5f, renderWorld, physicsWorld, 0xffff0000, 10);
-        ball1.setWallSound(Audio.loadSample("wall.mp3"));
-        PongBall ball2 = new PongBall(0, 1, 0.5f, renderWorld, physicsWorld, 0xffff0000, 10);
-        ball2.setWallSound(Audio.loadSample("wall.mp3"));
+        String audioName = "wall.mp3";
+        boolean audioExists = applet.dataFile(audioName).isFile();
+
+       PongBall ball1 = new PongBall(0, 0, 0.5f, renderWorld, physicsWorld, 0xffff0000, 10);
+       PongBall ball2 = new PongBall(0, 1, 0.5f, renderWorld, physicsWorld, 0xffff0000, 10);
+
+        if(audioExists) {
+            ball1.setWallSound(Audio.loadSample("wall.mp3"));
+            ball2.setWallSound(Audio.loadSample("wall.mp3"));
+        } else {
+            System.out.println("./data/" + audioName + " cannot be found. Skipping.");
+        }
 
     }
     PongPaddle leftPaddle;
